@@ -1,0 +1,68 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beautique</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Beautique</h1>
+  <div class="menu-toggle" id="menu-toggle">☰</div>
+  <nav id="nav-links">
+    <a href="#">Home</a>
+    <a href="#">Shop</a>
+    <a href="/contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h2>Glow Like Never Before</h2>
+    <p>Discover premium beauty products tailored just for you.</p>
+    <button>Shop Now</button>
+  </div>
+</section>
+
+<section class="products">
+  <h2>Featured Products</h2>
+  <div class="product-grid">
+    
+    <div class="product-card">
+      <h3>Lipstick</h3>
+      <p>Long-lasting matte finish</p>
+    </div>
+
+    <div class="product-card">
+      <h3>Foundation</h3>
+      <p>Smooth and flawless coverage</p>
+    </div>
+
+    <div class="product-card">
+      <h3>Perfume</h3>
+      <p>Elegant and refreshing scent</p>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2026 Beautique. All rights reserved.</p>
+</footer>
+
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const nav = document.getElementById('nav-links');
+
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+</script>
+
+</body>
+</html>
+
+

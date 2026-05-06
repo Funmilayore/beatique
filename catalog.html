@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalog - Beautique</title>
+  <link rel="stylesheet" href="catalog.css">
+</head>
+<body>
+
+<header>
+  <h1>Beautique</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="catalog.html">Catalog</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="catalog">
+  <h2>Our Products</h2>
+
+  <div class="product-grid">
+
+    <div class="product-card">
+      <h3>Lipstick</h3>
+      <p data-price="8000">₦8,000</p>
+      <button onclick="addToCart('Lipstick', 8000)">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <h3>Foundation</h3>
+      <p data-price="12000">₦12,000</p>
+      <button onclick="addToCart('Foundation', 12000)">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <h3>Perfume</h3>
+      <p data-price="15000">₦15,000</p>
+      <button onclick="addToCart('Perfume', 15000)">Add to Cart</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- CART -->
+<section class="cart">
+  <h2>Your Cart</h2>
+  <div id="cart-items"></div>
+
+  <h3 id="total">Total: ₦0</h3>
+
+  <button class="checkout-btn" onclick="checkout()">Proceed to Payment</button>
+</section>
+
+<!-- PAYMENT MODAL -->
+<div id="payment-modal" class="modal">
+  <div class="modal-content">
+    <h2>Dummy Payment</h2>
+    <p>Click confirm to simulate payment</p>
+    <button onclick="confirmPayment()">Pay Now</button>
+    <button onclick="closeModal()">Cancel</button>
+  </div>
+</div>
+
+<script src="catalog.js"></script>
+</body>
+</html>
